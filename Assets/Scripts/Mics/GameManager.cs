@@ -44,10 +44,10 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            TogglePause();
-        }
+        // if (Input.GetKeyDown(KeyCode.Escape))
+        // {
+        //     TogglePause();
+        // }
     }
 
     void TogglePause()
@@ -55,13 +55,11 @@ public class GameManager : MonoBehaviour
         if (Time.timeScale == 1)
         {
             Time.timeScale = 0;
-            starterAssetsInputs.SetCursorState(false);
             pauseUI.gameObject.SetActive(true);
         }
         else
         {
             Time.timeScale = 1;
-            starterAssetsInputs.SetCursorState(false);
             pauseUI.gameObject.SetActive(false);
         }
     }
