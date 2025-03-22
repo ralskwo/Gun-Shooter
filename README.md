@@ -3,6 +3,10 @@
 본 프로젝트는 Unity 6을 기반으로 개발된 1인칭 슈팅(FPS) 게임으로, 게임 시스템 전반을 직접 설계 및 구현하였으며, **에셋 관리의 효율성, 유지보수 가능한 구조**, 그리고 **몰입감 있는 전투 경험**을 목표로 구성하였습니다. 무기 시스템, AI 기반 적 행동, UI 흐름 제어, 레벨 디자인 등 게임의 모든 핵심 요소를 단독으로 개발하였습니다.
 
 ## Demo ScreenShot
+![1](https://github.com/user-attachments/assets/87cf7129-bf76-4805-a813-33d2aea1fea7)
+![2](https://github.com/user-attachments/assets/8ed62b45-ce80-4705-b33b-ca7274d7b241)
+![3](https://github.com/user-attachments/assets/285ce8f0-11e9-4e81-9ff8-4d91a3599d9f)
+
 
 ## 🔧 개발 환경 및 기술 스택
 
