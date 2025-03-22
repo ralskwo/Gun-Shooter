@@ -5,9 +5,11 @@ public class Explosion : MonoBehaviour
 {
     [SerializeField] float radius = 1.5f;
     [SerializeField] int damage = 3;
+    GameManager gameManager;
 
     void Start()
     {
+        gameManager = FindFirstObjectByType<GameManager>();
         Explode();
     }
 
@@ -25,7 +27,9 @@ public class Explosion : MonoBehaviour
         {
             PlayerHealth playerHealth = collider.GetComponent<PlayerHealth>();
             if (!playerHealth) continue;
+
             playerHealth.TakeDamage(damage);
+            gameManager.AdjustEnemiesLeftUI(-1);
 
             break;
         }
